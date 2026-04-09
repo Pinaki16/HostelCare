@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'motion/react';
 import ThemeToggle from '../components/ThemeToggle';
+import RotatingText from '../components/RotatingText';
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -170,7 +171,16 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
                 Fast & Efficient Reporting
               </div>
               <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 dark:text-white leading-[1.1] mb-6">
-                Simplifying Hostel <span className="text-blue-600">Issue Reporting</span>
+                Simplifying Hostel{' '}
+                <RotatingText
+                  texts={['Issue', 'Complaint', 'Maintenance']}
+                  rotationInterval={2500}
+                  staggerDuration={0.03}
+                  splitBy="characters"
+                  mainClassName="text-blue-600"
+                  elementLevelClassName="text-blue-600"
+                />
+                {' '}Reporting
               </h1>
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-lg leading-relaxed">
                 Empowering students to report maintenance issues instantly and track resolution progress in real-time. A smarter way to manage hostel life.
