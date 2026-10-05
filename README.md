@@ -95,20 +95,3 @@ http://localhost:3000
 * AI-based complaint categorization
 * Analytics dashboard for complaint trends
 
----
-
-## 👨‍💻 Authors
-
-* Lokesh Sheshrao Khedekar
-* Radhika Dagade
-* Vaibhav Dahatonde
-* Rohit Dane
-* Sanskar Dangat
-* Prem Deore
-* Nevan Dgama
-
----
-
-## 📄 License
-
-This project is developed for educational and research purposes.
