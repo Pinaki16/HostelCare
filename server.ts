@@ -11,7 +11,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "super-secret-key";
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   // Seed initial admin if no users exist
   const adminExists = db.prepare("SELECT * FROM users WHERE email = ?").get("admin@hostel.com");
